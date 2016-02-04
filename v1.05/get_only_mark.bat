@@ -2,8 +2,8 @@
 
 set CUR_DIR=%cd%
 
-md remove_mark_log
+md get_only_mark
 
 for %%a in (*.nmf) do (
-	cnmf getnll %%a MARK >remove_mark_log\%%a
+	cnmf getall %%a MARK >get_only_mark\%%a
 )
